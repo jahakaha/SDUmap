@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="990.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FourthController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="990.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/map/MAP4_L.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="425.0" layoutY="97.0" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #246786;" text="4'TH FLOOR" textFill="WHITE">
+         <font>
+            <Font name="Lucida Fax Regular" size="24.0" />
+         </font>
+      </Label>
+      <Pane fx:id="EDUCATION_4" layoutX="186.0" layoutY="142.0" onMouseClicked="#onClicked" prefHeight="208.0" prefWidth="272.0" />
+      <Pane fx:id="BUSINESS_4" layoutX="509.0" layoutY="142.0" onMouseClicked="#onClicked" prefHeight="208.0" prefWidth="272.0" />
+      <Pane fx:id="ENGINEERING_4" layoutX="186.0" layoutY="342.0" onMouseClicked="#onClicked" prefHeight="208.0" prefWidth="272.0" />
+      <Pane fx:id="SOCIAL_4" layoutX="509.0" layoutY="350.0" onMouseClicked="#onClicked" prefHeight="208.0" prefWidth="272.0" />
+      <ImageView fx:id="img" fitHeight="60.0" fitWidth="60.0" layoutX="356.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/location.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane_black" disable="true" opacity="0.0" prefHeight="700.0" prefWidth="990.0" style="-fx-background-color: black;" />
+      <ImageView fx:id="img_zoom" fitHeight="500.0" fitWidth="600.0" layoutX="240.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <JFXButton fx:id="btn_main" focusTraversable="false" layoutX="375.0" layoutY="620.0" onAction="#action_main" prefHeight="70.0" prefWidth="230.0" ripplerFill="#246786" text="MAIN" textAlignment="CENTER" textFill="#009fed">
+         <font>
+            <Font name="Lucida Fax Demibold" size="36.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </JFXButton>
+   </children>
+</Pane>

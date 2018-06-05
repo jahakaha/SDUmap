@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="990.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SecondController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="990.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/map/MAP2_L.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="425.0" layoutY="97.0" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #246786;" text="2'ND FLOOR" textFill="WHITE">
+         <font>
+            <Font name="Lucida Fax Regular" size="24.0" />
+         </font>
+      </Label>
+      <Pane fx:id="RED_HALL_2" layoutX="36.0" layoutY="140.0" onMouseClicked="#onClicked" prefHeight="247.0" prefWidth="183.0" />
+      <Pane fx:id="EXIT_2" layoutX="67.0" layoutY="356.0" onMouseClicked="#onClicked" prefHeight="262.0" prefWidth="247.0" />
+      <Pane fx:id="BOCHKA_2" layoutX="261.0" layoutY="357.0" onMouseClicked="#onClicked" prefHeight="185.0" prefWidth="208.0" />
+      <Pane fx:id="SOCIAL_2" layoutX="216.0" layoutY="197.0" onMouseClicked="#onClicked" prefHeight="194.0" prefWidth="224.0" />
+      <Pane fx:id="EDUCATION_2" layoutX="389.0" layoutY="186.0" onMouseClicked="#onClicked" prefHeight="201.0" prefWidth="224.0" />
+      <Pane fx:id="ENGINEERING_2" layoutX="559.0" layoutY="195.0" onMouseClicked="#onClicked" prefHeight="217.0" prefWidth="224.0" />
+      <Pane fx:id="BUSINESS_2" layoutX="726.0" layoutY="188.0" onMouseClicked="#onClicked" prefHeight="217.0" prefWidth="224.0" />
+      <Pane fx:id="RED_CATERING_2" layoutX="467.0" layoutY="356.0" onMouseClicked="#onClicked" prefHeight="157.0" prefWidth="170.0" />
+      <Pane fx:id="E_2" layoutX="796.0" layoutY="351.0" onMouseClicked="#onClicked" prefHeight="203.0" prefWidth="185.0" />
+      <Pane fx:id="AC_CATERING_2" layoutX="611.0" layoutY="353.0" onMouseClicked="#onClicked" prefHeight="208.0" prefWidth="185.0" />
+      <ImageView fx:id="img" fitHeight="60.0" fitWidth="60.0" layoutX="102.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/location.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="pane_black" disable="true" opacity="0.0" prefHeight="700.0" prefWidth="990.0" style="-fx-background-color: black;" />
+      <ImageView fx:id="img_zoom" fitHeight="500.0" fitWidth="600.0" layoutX="240.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <JFXButton fx:id="btn_main" focusTraversable="false" layoutX="375.0" layoutY="620.0" onAction="#action_main" prefHeight="70.0" prefWidth="230.0" ripplerFill="#246786" text="MAIN" textAlignment="CENTER" textFill="#009fed">
+         <font>
+            <Font name="Lucida Fax Demibold" size="36.0" />
+         </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </JFXButton>
+   </children>
+</Pane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/back.jpg" />
+         </image>
+      </ImageView>
+      <Pane opacity="0.76" prefHeight="360.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="269.0" layoutX="206.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="96.0" layoutX="110.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../res/icon2.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="text" focusColor="#009fed" focusTraversable="false" layoutX="160.0" layoutY="154.0" prefHeight="55.0" prefWidth="280.0" promptText="ENTER ROOM NUMBER" unFocusColor="#386175">
+               <font>
+                  <Font name="Lucida Fax Regular" size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btn_enter" focusTraversable="false" layoutX="185.0" layoutY="254.0" onAction="#enter" prefHeight="70.0" prefWidth="230.0" ripplerFill="#246786" text="ENTER" textAlignment="CENTER" textFill="#009fed">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="36.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>
